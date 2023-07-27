@@ -4,14 +4,13 @@ import json
 from insurance.config import mongo_client
 
 # Provide the mongodb localhost url to connect python to mongodb.
-# client = pymongo.MongoClient("mongodb+srv://dharavath_ramdas:password@cluster0.y1ffe.mongodb.net/?retryWrites=true&w=majority")
-#mongodb://localhost:27017/neurolabDB
+client = pymongo.MongoClient("mongodb+srv://abhishekkale:abhir8411@abhirajk0.gakaogi.mongodb.net/?retryWrites=true&w=majority")
+#mongodb://localhost:27017//
 
 DATABASE_NAME = "insurance"
 COLLECTION_NAME = "premium"
-DATA_FILE_PATH = "/config/workspace/.git/Insurance-Premium-Prediction-ML-Project/insurance_main_dataset.csv"
-
-if __name__=="__main__":
+DATA_FILE_PATH = ""
+if __name__=="__main__"
     df = pd.read_csv(DATA_FILE_PATH)
     print(f"Rows and Columns: {df.shape}" )
 
