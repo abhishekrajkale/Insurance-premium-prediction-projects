@@ -9,8 +9,8 @@ client = pymongo.MongoClient("mongodb+srv://abhishekkale:abhir8411@abhirajk0.gak
 
 DATABASE_NAME = "insurance"
 COLLECTION_NAME = "premium"
-DATA_FILE_PATH = ""
-if __name__=="__main__"
+DATA_FILE_PATH = "/config/workspace/insurance_main_dataset.csv"
+if __name__=="__main__":
     df = pd.read_csv(DATA_FILE_PATH)
     print(f"Rows and Columns: {df.shape}" )
 
